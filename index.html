@@ -1,0 +1,137 @@
+<!docType HTML>
+<html>
+  <head>
+    <title>Gym Survey</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title" class="text-center">Gym Survey Form</h1>
+      <p id="description" class="text-center">The Gym Survey Form is used to collect information about how a community uses a gym</p>
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name"
+                 id="name-label">Full Name</label>
+          <input type="text"
+                 class="form-input"
+                 id="name" 
+                 placeholder="Enter your Full Name" 
+                 required />
+        </div>
+        <div class="form-group">
+          <label for="age"
+                 id="number-label">Age</label>
+          <input type="number"
+                 class="form-input" 
+                 id="number" 
+                 placeholder="Enter your Age" 
+                 min="18"
+                 max="99" />
+        </div>
+        <div class="form-group">
+          <label for="email" 
+                 id="email-label">Email</label>
+          <input type="email"
+                 class="form-input"
+                 id="email"
+                 placeholder="Enter your Email" 
+                 required />
+        </div>
+        <div class="form-group">
+          <p>Gender</p>
+          <select id="dropdown" class="form-input" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>            
+            <option value="other">Other</option>
+          </select>  
+        </div>
+        <div class="form-group">
+          <p>What time do you normally prefer to attend the gym?</p>
+          <label>
+            <input type="radio" 
+                   class="input-radio" 
+                   value="morning"
+                   name="radio-check"
+                   checked>
+            Morning
+          </label>
+          <label>
+            <input type="radio" 
+                   class="input-radio" 
+                   value="afternoon"
+                   name="radio-check">
+            Afternoon
+          </label>
+          <label>
+            <input type="radio" 
+                   class="input-radio" 
+                   value="evening"
+                   name="radio-check">
+            Evening
+          </label>
+        </div>
+        <div class="form-group">
+          <p>Why do you go to the gym?</p>
+          <select id="reason" class="form-input" required>
+            <option disabled selected value>Select an option</option>
+            <option value="lifestyle">Lifestyle</option>
+            <option value="rehabilitation">Rehabilitation</option>
+            <option value="strength-training">Strength Training</option>
+            <option value="weight-loss">Weight Loss</option>
+            <option value="health-improvement">Health Improvement</option>
+            <option value="social-environment">Social Environment</option>
+        </select>
+        </div>
+        <div class="form-group">
+          <p>Which of the following would you use if made available in the gym?
+          <span class="clue">(Check all that apply)</span>
+          </p>
+          <label>
+            <input name="prefer" value="chiropractics" type="checkbox" class="input-checkbox">
+            Chiropractics
+          </label>
+          <label>
+            <input name="prefer" value="massage" type="checkbox" class="input-checkbox">
+            Massage
+          </label>
+          <label>
+            <input name="prefer" value="hair-cut" type="checkbox" class="input-checkbox">
+            Hair Cut
+          </label>
+          <label>
+            <input name="prefer" value="gym-membership" type="checkbox" class="input-checkbox">
+            Gym Membership
+          </label>
+          <label>
+            <input name="prefer" value="personal-training" type="checkbox" class="input-checkbox">
+            Personal Training
+          </label>
+          <label>
+            <input name="prefer" value="tanning" type="checkbox" class="input-checkbox">
+            Tanning
+          </label>
+          <label>
+            <input name="prefer" value="group-cardio" type="checkbox" class="input-checkbox">
+            Group Cardio
+          </label>
+          <label>
+            <input name="prefer" value="child-care-area" type="checkbox" class="input-checkbox">
+            Child Care Area
+          </label>
+          <label>
+            <input name="prefer" value="drink-snack-bar" type="checkbox" class="input-checkbox">
+            Drink/Snack Bar
+          </label>
+        </div>
+        <div class="form-group">
+          <p>Additional Comments or Suggestions?</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
